@@ -11145,7 +11145,7 @@ a:focus {
 }
 .social-network ul li {
   float: left;
-  width: 16.66%;
+  width: 18.66%;
 }
 @media (max-width: 767px) {
   .social-network ul li {
@@ -11221,10 +11221,10 @@ a:focus {
 .social-network ul li a.google {
   background-color: #dc4a38;
 }
-.social-network ul li a.rss {
+.social-network ul li a.linkedin {
   background-color: #f9a32c;
 }
-.social-network ul li a.linkedin {
+.social-network ul li a.instagram {
   background-color: #007bb6;
 }
 .social-network ul li a.youtube {
@@ -11247,10 +11247,10 @@ a:focus {
 .social-network ul li a:hover.google i {
   color: #dc4a38;
 }
-.social-network ul li a:hover.rss i {
+.social-network ul li a:hover.linkedin i {
   color: #f9a32c;
 }
-.social-network ul li a:hover.linkedin i {
+.social-network ul li a:hover.instagram i {
   color: #007bb6;
 }
 .social-network ul li a:hover.youtube i {
