@@ -388,6 +388,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	margin: 0;
+	
+	
 }
 
 dfn, cite, em, i {
@@ -3019,13 +3021,13 @@ RESPONSIVE STYLESHEET
 	}
 
 	.footer-second-section .footer-line:first-child {
-		margin-left: 0;
-		margin-right: 2em;
+		margin-left: -1em;
+		margin-right: 5em;
 	}
 
 	.footer-second-section .footer-line:last-child {
-		margin-right: 0;
-		margin-left: 2em;
+		margin-right: 9em;
+		margin-left: 1em;
 	}
 
 	.page-footer .footer-second-section .social-list {
@@ -3472,6 +3474,7 @@ RESPONSIVE STYLESHEET
 	padding-bottom: 70px;
 	text-align: center;
 	color: #fff;
+	margin-top: 60px;
 }
 
 .what-other-say .container .owl-carousel{
@@ -3491,6 +3494,7 @@ RESPONSIVE STYLESHEET
 	font-weight: 700;
 	line-height: 1.9em;
 	position: relative;
+
 }
 
 .what-other-say .container .head::after {
@@ -3500,6 +3504,7 @@ RESPONSIVE STYLESHEET
 	width: 90px;
 	left: 46%;
 	bottom: 0;
+	
 }
 
 
@@ -3508,7 +3513,8 @@ RESPONSIVE STYLESHEET
 	background: #000;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 10px;
+	padding: 35px;
+	margin-top: 12px;
 }
 
 .what-other-say .container .customer-item .border {
@@ -3594,6 +3600,4 @@ div.gallery {
 	width: 100%;
 	height: auto;
   }
-  
-
   

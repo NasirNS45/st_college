@@ -179,7 +179,7 @@ $('.three').owlCarousel({
  $(function () {
  
   $(".rateYo").rateYo({
-    rating: 4,
+    rating: 5,
     starWidth: "20px"
   });
  

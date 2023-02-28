@@ -31,6 +31,67 @@
 			color: rgb(233, 239, 240);
 			font-size: 5rem !important;
 		}
+
+		.accordion {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+		}
+
+		.active,
+		.accordion:hover {
+			background-color: #ccc;
+		}
+
+		.accordion:after {
+			content: '\002B';
+			color: #777;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
+		}
+
+		.active:after {
+			content: "\2212";
+		}
+
+		.panel {
+			padding: 0 18px;
+			background-color: DAE2B6;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		}
+
+		.accordion-box {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		.popular {
+			background: #E8F3D6;
+			margin-bottom: 40px;
+			margin-top: 40px;
+		}
+
+		.cols {
+			width: calc(33.33% - 16px);
+			margin-bottom: 24px;
+		}
+
+		.cols ul li {
+			font-size: 16px;
+			
+		}
 	</style>
 </head>
 
@@ -52,14 +113,16 @@
 					<div class="top-header-right">
 						<div class="social-block">
 							<ul class="social-list">
-								<li><a href="https://www.edunews.com/institution/st-jeromes-pre-university-college"
+								<li><a href="https://indiapl.com/karnataka/st-jeromes-pu-degree-college-613183"
 										target="_blank"><i class="fab fa-google-plus-g"></i></a>
 								</li>
 								<li><a href="https://www.facebook.com/stjeromescollege/" target="_blank"><i
 											class="fab fa-facebook-square"></i></a></li>
-								<li><a href="https://twitter.com/home" target="_blank"><i
-											class="fab fa-twitter"></i></a></li>
-								<li><a href="https://www.skype.com/en/" target="_blank"><i class="fab fa-skype"></i></a>
+								<li><a href="https://www.youtube.com/channel/UCaKIkFMvROWbe__J9ryPETA?app=desktop"
+										target="_blank"><i class="fab fa-youtube"></i></a></li>
+								<li><a href="https://www.instagram.com/stjeromescollege/?igshid=ZmZhODViOGI%3D"
+										target="_blank"><i class="fab fa-instagram"></i></a></li>
+
 								</li>
 							</ul>
 						</div>
@@ -114,105 +177,95 @@
 			<div id="owl-four-nav" class="owl-nav"></div>
 		</div>
 
-		<div class="page-heading">
-			<div class="container">
-				<h2>popular courses</h2>
+		<section class="popular course">
+			<div class="page-heading">
+				<div class="container">
+					<h2>popular courses</h2>
+				</div>
 			</div>
-		</div>
-		<!-- Popular courses End -->
-		<div class="learn-courses">
-			<div class="container">
-				<div class="courses">
-					<div class="owl-one owl-carousel">
-						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap" itemprop="image"><img
-									src="https://5.imimg.com/data5/HO/JK/SI/GLADMIN-9733558/21211244-500x500.png"
-									alt="courses picture"></div>
-							<a href="#" class="learn-desining-banner" itemprop="name">PCMB >>></a>
-							<div class="box-body" itemprop="description">
-								<p>PCMB subject combination makes you eligible for virtually all career options out
-									there. From Medicine to Research to Business to Social Sciences, you can explore a
-									plethora of career options after your class 12th.</p>
-								<section itemprop="time">
-									<p><span>Duration:</span> 2 Years</p>
-									<p><span>Class Time:</span> 9AM - 3:30PM</p>
-									<!-- <p><span>Fee:</span> 2,00,000</p> -->
-								</section>
+			<!-- Popular courses End -->
+			<div class="learn-courses">
+				<div class="container">
+					<div class="accordion-box" style="padding-bottom: 40px;">
+						<div class="cols">
+							<button class="accordion">HESPsy</button>
+							<div class="panel">
+								<ul style="list-style-type: upper-roman !important;">
+									<li>1. History</li>
+									<li>2. Economics</li>
+									<li>3. Sociology</li>
+									<li>4. Psychology</li>
+								</ul>
 							</div>
 						</div>
 
-						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap" itemprop="image"><img
-									src="https://clatutor.com/wp-content/uploads/2021/07/Asset-8-100.jpg"
-									alt="courses picture"></div>
-							<a href="#" class="learn-desining-banner" itemprop="name">PCMCs >>></a>
-							<div class="box-body" itemprop="description">
-								<p>PCMC is truly a subject worth all ur efforts. In today's market, a job which needs
-									the knowledge of PCMCs is more easily available. In today's world, DATA SCIENCE and
-									AI are the most flourishing. PCMC Career Options - Machine Learning</p>
-								<section itemprop="time">
-									<p><span>Duration:</span> 2 Years</p>
-									<p><span>Class Time:</span> 9AM - 3:30PM</p>
-									<!-- <p><span>Class Time:</span> 6am-12am / 11am-5pm</p> -->
-									<!-- <p><span>Fee:</span> 2,00,000</p> -->
-								</section>
+						<div class="cols">
+							<button class="accordion">PCMC’s</button>
+							<div class="panel">
+								<ul style="list-style-type: upper-roman !important;">
+									<li>1. Physics</li>
+									<li>2. Chemistry</li>
+									<li>3. Mathematics</li>
+									<li>4. Computer Science</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cols">
+							<button class="accordion">PCMB</button>
+							<div class="panel">
+								<ul style="list-style-type: upper-roman !important;">
+									<li>1. Physics</li>
+									<li>2. Chemistry</li>
+									<li>3. Mathematics</li>
+									<li>4. Biology</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cols">
+							<button class="accordion">CEBA</button>
+							<div class="panel">
+								<ul style="list-style-type: upper-roman !important;">
+									<li>1. Computer Science</li>
+									<li>2. Economics</li>
+									<li>3. Business Studies</li>
+									<li>4. Accountancy</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cols">
+							<button class="accordion">HEBA</button>
+							<div class="panel">
+								<ul style="list-style-type: upper-roman !important;">
+									<li>1. History</li>
+									<li>2. Economics</li>
+									<li>3. Business Studies</li>
+									<li>4. Accountancy</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cols">
+							<button class="accordion">B.COM</button>
+							<div class="panel">
+								<ul style="list-style-type: upper-roman !important;">
+									<li>1. Corporate Administration </li>
+								</ul>
+							</div>
+						</div>
+						<div class="cols">
+							<button class="accordion">B.A</button>
+							<div class="panel">
+								<ul style="list-style-type: upper-roman !important;">
+									<li>1. English</li>
+									<li>2. Psychology</li>
+									<li>3. History</li>
+								</ul>
 							</div>
 						</div>
 
-						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap" itemprop="image"><img
-									src="https://5.imimg.com/data5/HO/JK/SI/GLADMIN-9733558/21211244-500x500.png"
-									alt="courses picture"></div>
-							<a href="#" class="learn-desining-banner" itemprop="name">HEBA >>></a>
-							<div class="box-body" itemprop="description">
-								<p>This course stream in Commerce includes the study subjects of History, Economics,
-									Business Studies and Accountancy. The program is aimed at providing education for
-									higher studies and pursue their field of study for their life.</p>
-								<section itemprop="time">
-									<p><span>Duration:</span> 2 Years</p>
-									<p><span>Class Time:</span> 9AM - 3:30PM</p>
-									<!-- <p><span>Fee:</span> 2,00,000</p> -->
-								</section>
-							</div>
-						</div>
-
-						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap" itemprop="image"><img
-									src="https://clatutor.com/wp-content/uploads/2021/07/Asset-8-100.jpg"
-									alt="courses picture"></div>
-							<a href="#" class="learn-desining-banner" itemprop="name">CEBA >>></a>
-							<div class="box-body" itemprop="description">
-								<p>The CEBA course comprising of Computer Science, Economics, Business Studies and
-									Accounting is a pre-university course becoming very popular among students. With a
-									combination of commerce subjects and computers.</p>
-								<section itemprop="time">
-									<p><span>Duration:</span> 2 Years</p>
-									<p><span>Class Time:</span> 9AM - 3:30PM</p>
-									<!-- <p><span>Fee:</span> 2,00,000</p> -->
-								</section>
-							</div>
-						</div>
-						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap" itemprop="image"><img
-									src="https://clatutor.com/wp-content/uploads/2021/07/Asset-8-100.jpg"
-									alt="courses picture"></div>
-							<a href="#" class="learn-desining-banner" itemprop="name">HESPsy >>></a>
-							<div class="box-body" itemprop="description">
-								<p>The HESsy course stream in Arts includes the study subjects of History, Economics,
-									Psychology, Sociology. This course provides a unique blend of subject that help to
-									enhance and
-									develo a condidate's communications skills.</p>
-								<section itemprop="time">
-									<p><span>Duration:</span> 2 Years</p>
-									<p><span>Class Time:</span> 9AM - 3:30PM</p>
-									<!-- <p><span>Fee:</span> 2,00,000</p> -->
-								</section>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- Learn courses End -->
 		<!-- <div class="section pb_70"> -->
 		<div class="container">
@@ -352,9 +405,9 @@
 			</div>
 		</section>
 		<!-- End of gallery Images -->
-		<section class="page-heading">
+		<!-- <section class="page-heading">
 			<div class="container">
-				<h2>upcomming events</h2>
+				<h2>upcoming events</h2>
 			</div>
 		</section>
 		<section class="events-section" itemprop="event" itemscope itemtype=" http://schema.org/Event">
@@ -398,12 +451,12 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- End of Events section -->
 		<section class="what-other-say">
 			<div class="container">
 				<h4 class="article-subtitle">Get to Know</h4>
-				<h2 class="head">what our students & Parent say</h2>
+				<h2 class="head">what our students & Parents say</h2>
 				<div class="three owl-carousel owl-theme">
 					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
 						<div class="border">
@@ -547,8 +600,7 @@
 						<h4><i class="fas fa-envelope"></i>
 							saintjeromescollege@gmail.com</a></h4>
 						<h4><a href="https://goo.gl/maps/JR352Zzmq4dfiBDd8"><i class="fas fa-map-marker-alt"></i>St.
-								Jeromes Pu and Degree College,
-								Bangalore, Karnataka, India</a></h4>
+								Ambedkar Nagar, Sarjapura Road, Carmelaram (post), Bengaluru- 35</a></h4>
 					</div>
 
 					<div class="box-wrap">
@@ -556,12 +608,23 @@
 							<h1>links</h1>
 						</header>
 						<ul>
+							<a href="https://indiapl.com/karnataka/st-jeromes-pu-degree-college-613183" target="_blank"
+								style="font-size: 16px;"><i class="fab fa-google-plus-g"></i> google</a><br><br>
+							<a href="https://www.facebook.com/stjeromescollege/" target="_blank"
+								style="font-size: 16px;"><i class="fab fa-facebook-square"></i> facebook</a><br><br>
+							<a href="https://www.youtube.com/channel/UCaKIkFMvROWbe__J9ryPETA?app=desktops"
+								target="_blank" style="font-size: 16px;"><i class="fab fa-youtube"></i> youtube</a><br>
+							<br>
+
+							</li>
+							<a href="https://www.instagram.com/stjeromescollege/?igshid=ZmZhODViOGI%3D" target="_blank"
+								style="font-size: 16px;"><i class="fab fa-instagram"></i> instagram</a></li>
 							<!-- <li><a href="principal725@gm">Principal</a></li> -->
-							<li><a href="https://www.facebook.com/stjeromescollege/" target="_blank">facebook</a></li>
+							<!-- <li><a href="https://www.facebook.com/stjeromescollege/" target="_blank">facebook</a></li>
 							<li><a href="https://www.youtube.com/channel/UCaKIkFMvROWbe__J9ryPETA?app=desktop"
 									target="_blank">youtube</a>
 							</li>
-							<li><a href="https://twitter.com/home" target="_blank">twitter</a></li>
+							<li><a href="https://twitter.com/home" target="_blank">twitter</a></li> -->
 
 						</ul>
 					</div>
@@ -571,7 +634,7 @@
 							<h1>quick contact</h1>
 						</header>
 						<section class="quick-contact">
-							<input type="email" name="email" placeholder="Your Email*">
+							<input type="email_id" name="email" placeholder="Your Email*">
 							<textarea placeholder="Type your message*"></textarea>
 							<button>send message</button>
 						</section>
@@ -584,10 +647,12 @@
 				<div class="container">
 					<hr class="footer-line">
 					<ul class="social-list">
+						<li><a href="https://indiapl.com/karnataka/st-jeromes-pu-degree-college-613183"
+								target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
 						<li><a href="https://www.facebook.com/stjeromescollege/" target="_blank"><i
 									class="fab fa-facebook-square"></i></a></li>
-						<li><a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="https://www.skype.com/en/" target="_blank"><i class="fab fa-skype"></i></a></li>
+						<!-- <li><a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="https://www.skype.com/en/" target="_blank"><i class="fab fa-skype"></i></a></li> -->
 						<li><a href="https://www.youtube.com/channel/UCaKIkFMvROWbe__J9ryPETA?app=desktop"
 								target="_blank"><i class="fab fa-youtube"></i></a></li>
 						<li><a href="https://www.instagram.com/stjeromescollege/?igshid=ZmZhODViOGI%3D"
@@ -617,6 +682,22 @@
 	<!-- <script type="text/javascript" src="js/jquery.mmenu.all.js"></script> -->
 	<!-- <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script> -->
 	<script type="text/javascript" src="js/custom.js"></script>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
 </body>
 
 </html>
