@@ -3504,7 +3504,7 @@ fieldset[disabled] .btn-link {
 .btn-link:focus {
   color: #e84500;
   text-decoration: none;
-  background-color: transparent;
+  background-color: #222548;
 }
 .btn-link[disabled]:hover,
 fieldset[disabled] .btn-link:hover,
@@ -11145,7 +11145,7 @@ a:focus {
 }
 .social-network ul li {
   float: left;
-  width: 18.66%;
+  width: 19.74%;
 }
 @media (max-width: 767px) {
   .social-network ul li {

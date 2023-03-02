@@ -90,7 +90,98 @@
 
 		.cols ul li {
 			font-size: 16px;
-			
+
+		}
+
+		.event-wrap {
+			min-height: 147px;
+			height: 100%;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			background: aliceblue;
+		}
+
+		.event-wrap h3 {
+			text-align: center;
+		}
+
+		h2.headding1::after {
+			display: block;
+			margin-top: 8px;
+			content: '';
+			width: 150px;
+			height: 3px;
+			background: rgb(6, 11, 45);
+			position: absolute;
+			bottom: 0%;
+			left: 50%;
+			text-align: center;
+			transform: translate(-50%, 0);
+		}
+
+		h2.headding2::after {
+			display: block;
+			margin-top: 8px;
+			content: '';
+			width: 70px;
+			height: 3px;
+			background: rgb(6, 11, 45);
+			position: absolute;
+			bottom: 0%;
+			left: 50%;
+			text-align: center;
+			transform: translate(-50%, 0);
+		}
+
+		/* h2.headding3::after {
+			display: block;
+			margin-top: 8px;
+			content: '';
+			width: 150px;
+			height: 3px;
+			background: rgb(6, 11, 45);
+			position: absolute;
+			bottom: 0%;
+			left: 50%;
+			text-align: center;
+			transform: translate(-50%, 0);
+		} */
+
+		h2 {
+			position: relative;
+		}
+
+		/* .college-name {
+			font-size: 25px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			 z-index: 1000000;
+			top: 50%;
+			bottom: 100%;
+			left: 50%;
+			transform: translate(-50% -50%);
+			color: orange;
+			margin-left: -15em;
+			margin-right: 2em;
+			margin-top: -2em;  */
+
+			/* height: 20vh; */
+			/* width: 50%; */
+			/* display: flex; */
+
+		/* } */
+		.jerome{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1111111;
+			font-size: 20px;
+			width: 100%;
+			text-align: center;	
+			background-color: #0005;
 		}
 	</style>
 </head>
@@ -101,13 +192,16 @@
 			<div class="top-header">
 				<div class="container">
 					<div class="top-header-left">
-						<div class="top-header-block">
+						<div style="font-size: 15px;" class="top-header-block">
 							<a itemprop="email"><i class="fas fa-envelope"></i>
 								saintjeromescollege@gmail.com</a>
 						</div>
-						<div class="top-header-block">
+						<div style="font-size: 15px;" class="top-header-block">
 							<a itemprop="telephone"><i class="fas fa-phone"></i> +91
 								9008774321</a>
+						</div>
+						<div style="font-size: 15px;" class="top-header-left">
+							<a itemprop="college code"></i> COLLEGE CODE : AS - 725 & 14</a>
 						</div>
 					</div>
 					<div class="top-header-right">
@@ -163,6 +257,9 @@
 		</header>
 		<!-- Header Close -->
 		<div class="banner">
+			<div class="jerome">
+				<h1 style="color: #fff;"><b>St.Jerome's College(PU & Degree)</b></h1>
+			</div>
 			<div class="owl-four owl-carousel" itemprop="image">
 				<img src="https://storage.googleapis.com/cstack-website-storage/DSC_0253_9ddc95b37e/DSC_0253_9ddc95b37e.jpg?updated_at=2023-02-24T05:11:30.556Z"
 					style="height: 600px;" alt="Image of Bannner">
@@ -171,16 +268,65 @@
 				<img src="https://storage.googleapis.com/cstack-website-storage/IMG_0551_82c9b672d8/IMG_0551_82c9b672d8.jpg?updated_at=2023-02-24T05:11:18.798Z"
 					style="height: 600px;" alt="Image of Bannner">
 			</div>
-			<marquee behavior="smoth" direction="" style="background-color: #0005;">
-				<h1>Welcome to St.Jerome's College</h1>
-			</marquee>
+			<!-- <marquee behavior="scroll" direction="" style="background-color: #0005;"> -->
+			<!-- <div class="college-name">
+				<h1><b>St.Jerome's College(PU & Degree)</b></h1>
+			</div> -->
+			<!-- </marquee> -->
 			<div id="owl-four-nav" class="owl-nav"></div>
 		</div>
 
+
+		<!-- Learn courses End -->
+
+		<!-- <div class="section pb_70"> -->
+		<div class="container" style="padding-top: 60px;">
+			<!-- <div class="row justify-content-center"> -->
+			<div class="heading_s1 ">
+				<h1>
+					<span id="ContentPlaceHolder1_lbleventhdng" textAlign="left"><b>PRINCIPAL'S MESSAGE</b></span>
+				</h1>
+				<br>
+			</div>
+
+			<div style="display: flex;">
+				<div style="width: 70%;">
+					<p style="font-size: 18px;"><b>Welcome to St Jerome's PU College, Bengaluru</b>
+					</p>
+					<p style="font-size: 16px;"> “Education is not the learning of
+						facts, but the training of
+						mind to think” Says Albert Einstein. Here at St. Jerome’s PU and Degree college we focus
+						on the holistic growth of the students thus we take education beyond class rooms. Just
+						marks and certificates are not enough to face life, so we train our students also to
+						think creatively and conceptually. The aim of education, for Aristotle, was to teach
+						intellectual and moral virtues side by side. We mould our students strong, by educating
+						them to understand and utilize the failures constructively so as to face this
+						competitive and challenging world effectively.
+						“We cannot always build the future for our youth, but we can build our youth for the
+						future”. These words of Franklin D. Roosevelt perfectly describe the vision of our
+						institution. Our college is blessed with a highly qualified faculties consist of
+						dedicated group of staff, a campus landscape that expands each year with improved
+						facilities, thus it creates vibrant and significant opportunities for the students to
+						learn and to lead.
+						Quality is never an accident, it is always the result of high intention, sincere
+						efforts, intelligent direction and skillful execution says Will A Foster.
+						Welcome to St. Jerome’s
+						Come as a student and go back a responsible citizen to lead the world.
+						Here we teach history thus tomorrow you make history.
+						We are waiting for you.
+						<!-- <a style="text-align: center;" href="file:///C:/edulab/index.html">Read More</a> -->
+					</p>
+				</div>
+				<div style="width: 50%;">
+					<img src="https://storage.googleapis.com/cstack-website-storage/IMG_0084_669d0721dd/IMG_0084_669d0721dd.jpg?updated_at=2023-02-24T06:22:49.695Z"
+						alt="">
+				</div>
+			</div>
+		</div>
 		<section class="popular course">
 			<div class="page-heading">
 				<div class="container">
-					<h2>popular courses</h2>
+					<h2>available courses</h2>
 				</div>
 			</div>
 			<!-- Popular courses End -->
@@ -247,8 +393,8 @@
 							<button class="accordion">B.COM</button>
 							<div class="panel">
 								<ul style="list-style-type: upper-roman !important;">
-									<li>1. Accountancy</li>
-									<li>2. Taxation</li>
+									<li>Accountancy and Taxation</li>
+									<li></li>
 								</ul>
 							</div>
 						</div>
@@ -267,56 +413,34 @@
 				</div>
 			</div>
 		</section>
-		<!-- Learn courses End -->
-		<!-- <div class="section pb_70"> -->
-		<div class="container">
-			<!-- <div class="row justify-content-center"> -->
-			<div class="heading_s1 ">
-				<h1>
-					<span id="ContentPlaceHolder1_lbleventhdng" textAlign="left"><b>PRINCIPAL'S MESSAGE</b></span>
-				</h1>
-				<br>
+		<section class="page-heading">
+			<div class="container">
+				<h2 class="headding1">upcoming events</h2>
 			</div>
-
-			<div style="display: flex;">
-				<div style="width: 70%;">
-					<p style="font-size: 18px;"><b>Welcome to St Jerome's PU College, Bengaluru.</b>
-					</p>
-					<p style="font-size: 16px;"> “Education is not the learning of
-						facts, but the training of
-						mind to think” Says Albert Einstein .Here at St. Jerome’s PU and Degree college we focus
-						on the holistic growth of the students thus we take education beyond class rooms. Just
-						marks and certificates are not enough to face life, so we train our students also to
-						think creatively and conceptually. The aim of education, for Aristotle, was to teach
-						intellectual and moral virtues side by side. We mould our students strong, by educating
-						them to understand and utilize the failures constructively so as to face this
-						competitive and challenging world effectively.
-						“We cannot always build the future for our youth, but we can build our youth for the
-						future”. These words of Franklin D. Roosevelt perfectly describe the vision of our
-						institution. Our college is blessed with a highly qualified faculties consist of
-						dedicated group of staff, a campus landscape that expands each year with improved
-						facilities, thus it creates vibrant and significant opportunities for the students to
-						learn and to lead.
-						Quality is never an accident, it is always the result of high intention, sincere
-						efforts, intelligent direction and skillful execution says Will A Foster
-						Welcome to St. Jerome’s
-						Come as a student and go back a responsible citizen to lead the world.
-						Here we teach history thus tomorrow you make history.
-						We are waiting for you.
-						<!-- <a style="text-align: center;" href="file:///C:/edulab/index.html">Read More</a> -->
-					</p>
+		</section>
+		<section class="events-section" itemprop="event" itemscope itemtype=" http://schema.org/Event">
+			<div class="container">
+				<div class="event-wrap">
+					<h3 style="font-size: 18px;"><span style="color:red">09.03.23</span> <br>II PU exams begin</h3>
 				</div>
-				<div style="width: 50%;">
-					<img src="https://storage.googleapis.com/cstack-website-storage/IMG_0084_669d0721dd/IMG_0084_669d0721dd.jpg?updated_at=2023-02-24T06:22:49.695Z"
-						alt="">
+
+				<div class="event-wrap">
+					<h3 style="font-size: 18px;"><span style="color:red">03.03.23</span> <br>1st
+						Semester Exams</h3>
+
+				</div>
+
+				<div class="event-wrap">
+					<h3 style="font-size: 18px;"><span style="color:red">03.05.23</span> <br> II PU classes begin</h3>
+
 				</div>
 			</div>
-		</div>
-
+		</section>
+		<!-- End of Events section -->
 		<!-- Closed WhyUs section -->
 		<section class="page-heading">
 			<div class="container">
-				<h2>gallery</h2>
+				<h2 class="headding2">gallery</h2>
 			</div>
 		</section>
 		<section class="gallery-images-section" itemprop="image" itemscope itemtype=" http://schema.org/ImageGallery">
@@ -406,54 +530,7 @@
 			</div>
 		</section>
 		<!-- End of gallery Images -->
-		<!-- <section class="page-heading">
-			<div class="container">
-				<h2>upcoming events</h2>
-			</div>
-		</section>
-		<section class="events-section" itemprop="event" itemscope itemtype=" http://schema.org/Event">
-			<div class="container">
-				<div class="event-wrap">
-					<div class="img-wrap" itemprop="image">
-						<img src="https://storage.googleapis.com/cstack-website-storage/DSC_0218_40468fb8da/DSC_0218_40468fb8da.jpg?updated_at=2023-02-24T05:08:10.774Z"
-							alt="event images">
-					</div>
-				</div>
 
-				<div class="event-wrap">
-					<div class="img-wrap" itemprop="image">
-						<img src="https://storage.googleapis.com/cstack-website-storage/DSC_0253_9ddc95b37e/DSC_0253_9ddc95b37e.jpg?updated_at=2023-02-24T05:11:30.556Z"
-							alt="event images">
-					</div>
-				</div>
-
-				<div class="event-wrap">
-					<div class="img-wrap" itemprop="image">
-						<img src="https://storage.googleapis.com/cstack-website-storage/DSC_113743_5a3e709cb4/DSC_113743_5a3e709cb4.jpg?updated_at=2023-02-24T05:11:02.371Z"
-							style="height: 250px;" alt="event images">
-					</div>
-				</div>
-				<div class="event-wrap">
-					<div class="img-wrap" itemprop="image">
-						<img src="https://storage.googleapis.com/cstack-website-storage/even_cef92b1ff9/even_cef92b1ff9.jpg?updated_at=2023-02-24T07:33:11.122Z"
-							alt="event images">
-					</div>
-				</div>
-				<div class="event-wrap">
-					<div class="img-wrap" itemprop="image">
-						<img src="https://storage.googleapis.com/cstack-website-storage/IMG_4848_1b89aa50e7/IMG_4848_1b89aa50e7.jpg?updated_at=2023-02-24T07:32:53.731Z"
-							alt="event images">
-					</div>
-				</div>
-				<div class="event-wrap">
-					<div class="img-wrap" itemprop="image">
-						<img src="https://storage.googleapis.com/cstack-website-storage/IMG_5086_3b1d7718d5/IMG_5086_3b1d7718d5.jpg?updated_at=2023-02-24T07:33:21.605Z"
-							alt="event images">
-					</div>
-				</div>
-			</div>
-		</section> -->
-		<!-- End of Events section -->
 		<section class="what-other-say">
 			<div class="container">
 				<h4 class="article-subtitle">Get to Know</h4>

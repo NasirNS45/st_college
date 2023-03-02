@@ -48,6 +48,7 @@ $('.owl-one').owlCarousel({
 
 $('.owl-two').owlCarousel({
     loop:true,
+    autoplay:true,
     margin:30,
     responsiveClass:true,
     // nav: true,
@@ -76,6 +77,7 @@ $('.owl-three').owlCarousel({
     margin:10,
     responsiveClass:true,
     // nav: true,
+    autoplay:true,
     navText: ["<",">"],
     responsive:{
         0:{
@@ -98,6 +100,7 @@ $('.owl-three').owlCarousel({
 // For Banner Slider Home Page
 $('.owl-four').owlCarousel({
     loop:true,
+    autoplay:true,
     responsiveClass:true,
     nav: true,
     dots: false,
@@ -128,7 +131,8 @@ $('.owl-five').owlCarousel({
         loop:true,
         margin:0,
         video:true,
-        autoHeight:true,
+    autoplay:true,
+    autoHeight:true,
         lazyLoad:true,
         center:true,
         responsive:{
@@ -144,6 +148,7 @@ $('.owl-five').owlCarousel({
 
 $('.three').owlCarousel({
     loop:true,
+    autoplay:true,
     responsiveClass:true,
     nav: true,
     dots: false,
