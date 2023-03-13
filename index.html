@@ -93,7 +93,14 @@
 
 		}
 
+		.containers {
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 16px;
+		}
+
 		.event-wrap {
+			width: 32% !important;
 			min-height: 147px;
 			height: 100%;
 			justify-content: center;
@@ -134,54 +141,189 @@
 			transform: translate(-50%, 0);
 		}
 
-		/* h2.headding3::after {
-			display: block;
-			margin-top: 8px;
-			content: '';
-			width: 150px;
-			height: 3px;
-			background: rgb(6, 11, 45);
-			position: absolute;
-			bottom: 0%;
-			left: 50%;
-			text-align: center;
-			transform: translate(-50%, 0);
-		} */
-
 		h2 {
 			position: relative;
 		}
 
-		/* .college-name {
-			font-size: 25px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			position: absolute;
-			 z-index: 1000000;
-			top: 50%;
-			bottom: 100%;
-			left: 50%;
-			transform: translate(-50% -50%);
-			color: orange;
-			margin-left: -15em;
-			margin-right: 2em;
-			margin-top: -2em;  */
-
-			/* height: 20vh; */
-			/* width: 50%; */
-			/* display: flex; */
-
-		/* } */
-		.jerome{
+		.jerome {
 			position: absolute;
 			top: 0;
 			left: 0;
 			z-index: 1111111;
 			font-size: 20px;
 			width: 100%;
-			text-align: center;	
+			text-align: center;
 			background-color: #0005;
+		}
+
+		/* Top header background image */
+		@media screen and (max-width: 767px) {
+			.owl-item {
+				height: 420px;
+			}
+		}
+
+		/* Email and mobile width */
+		@media screen and (max-width: 767px) {
+			.top-header .top-header-left {
+				width: 100%;
+				grid-row-gap: 0em;
+			}
+		}
+
+		/* social media header */
+		@media screen and (max-width: 767px) {
+
+			.top-header-right ul,
+			li {
+				margin: -2px;
+				padding: 0;
+				margin-left: -6em;
+				margin-right: -6em;
+				font-size: initial;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.top-header-right .social-list li {
+				margin-right: 14px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.top-header .top-header-right {
+				margin-left: 1em;
+			}
+		}
+
+		/* login and register */
+		@media screen and (max-width: 767px) {
+			.top-header-right .login-block {
+				margin-right: -8em;
+				margin-left: auto;
+				font-size: 16px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.cols ul li {
+				font-size: 12px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.accordion {
+				padding: 2px;
+				font-size: 15px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.cols {
+				width: calc(31.33% - 9px);
+				margin-bottom: 23px;
+			}
+		}
+
+		@media screen and (max-width: 1199px) {
+			.container {
+				padding-left: 5px;
+				padding-right: 2px;
+			}
+		}
+
+		@media screen and (max-width: 1199px) {
+			.panel ul li {
+				margin: auto;
+			}
+		}
+
+		/* upcoming event */
+		@media screen and (max-width: 767px) {
+
+			.events-section .event-wrap,
+			.upcomming .container .event-wrap {
+				margin-bottom: 16px;
+				width: 100% !important;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.what-other-say .container .customer-item .border {
+				/* border: 1px solid #fff; */
+				padding: 6px !important;
+			}
+		}
+
+		/* what other say */
+		@media screen and (max-width: 767px) {
+			.what-other-say .container .head::after {
+				left: 32%;
+
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.what-other-say .container .customer-item {
+				width: 82%;
+				padding: 0px;
+
+			}
+		}
+
+		/* End what other say */
+
+		/* footer social media */
+		@media screen and (max-width: 767px) {
+			.page-footer .footer-second-section .social-list li {
+				margin-left: -5em;
+				margin-right: -7em;
+				margin: 9px;
+				padding: 0px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.page-footer .footer-second-section .social-list li:first-child {
+				margin-left: 4px;
+				margin-bottom: 30px;
+			}
+		}
+
+		/* End footer social media */
+		.principal-about {
+			width: 50%;
+			padding-right: 12px;
+		}
+
+		.principal-img {
+			width: 50%;
+
+		}
+
+		/* Top header manu list */
+		@media screen and (max-width: 767px) {
+			.menu-list {
+				display: flex;
+				margin-left: 6em;
+				margin-right: 6em;
+			}
+
+			body {
+				overflow-x: hidden;
+
+			}
+
+			.principal-about {
+				width: 100%;
+				padding: 12px;
+				order: 2;
+			}
+
+			.principal-img {
+				width: 100%;
+
+			}
 		}
 	</style>
 </head>
@@ -289,8 +431,8 @@
 				<br>
 			</div>
 
-			<div style="display: flex;">
-				<div style="width: 70%;">
+			<div style="display: flex;flex-wrap: wrap;">
+				<div class="principal-about">
 					<p style="font-size: 18px;"><b>Welcome to St Jerome's PU College, Bengaluru</b>
 					</p>
 					<p style="font-size: 16px;"> “Education is not the learning of
@@ -317,7 +459,7 @@
 						<!-- <a style="text-align: center;" href="file:///C:/edulab/index.html">Read More</a> -->
 					</p>
 				</div>
-				<div style="width: 50%;">
+				<div class="principal-img">
 					<img src="https://storage.googleapis.com/cstack-website-storage/IMG_0084_669d0721dd/IMG_0084_669d0721dd.jpg?updated_at=2023-02-24T06:22:49.695Z"
 						alt="">
 				</div>
@@ -419,7 +561,7 @@
 			</div>
 		</section>
 		<section class="events-section" itemprop="event" itemscope itemtype=" http://schema.org/Event">
-			<div class="container">
+			<div class="containers" style="display:flex;flex-wrap: wrap;">
 				<div class="event-wrap">
 					<h3 style="font-size: 18px;"><span style="color:red">09.03.23</span> <br>II PU exams begin</h3>
 				</div>

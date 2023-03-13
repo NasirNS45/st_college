@@ -42,6 +42,64 @@
             color: rgb(79, 227, 232);
             font-size: 7rem !important;
         }
+
+        /* Email and mobile width */
+        @media screen and (max-width: 767px) {
+            .top-header .top-header-left {
+                width: 100%;
+                grid-row-gap: 0em;
+                font-size: 16px;
+                margin-left: -2em;
+            }
+        }
+
+        /* social media header */
+        @media screen and (max-width: 767px) {
+            .top-header-right .social-block {
+                margin-right: -5em;
+                margin-left: -6em;
+                margin-bottom: 0em;
+                font-size: small;
+                margin-top: -17px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .top-header-right .social-list li {
+                margin-left: -1.375em;
+            }
+        }
+
+        /* End social media header */
+
+        /* login and register */
+        @media screen and (max-width: 767px) {
+            .top-header-right .login-block {
+                margin-right: -5em;
+                margin-left: auto;
+                font-size: 16px;
+            }
+        }
+
+        /* Follow Us */
+        @media screen and (max-width: 767px) {
+            .center-content1 {
+                margin-top: 74em;
+            }
+            .social-network ul {
+                width: 303px;
+                margin-top: 1029px;
+            }
+        }
+        /* Cross Mark */
+		@media screen and (max-width: 767px) {
+			#close {
+				margin-right: -1em;
+			}
+		}
+		/* End Cross Mark */
+
+        /*End Follow Us */
     </style>
 </head>
 
@@ -62,7 +120,7 @@
                     </div>
                     <div class="top-header-right">
                         <div class="social-block">
-                            <ul class="social-list">
+                            <ul class="social-list social-list1">
                                 <li><a href="https://indiapl.com/karnataka/st-jeromes-pu-degree-college-613183"
                                         target="_blank"><i class="fab fa-google-plus-g fa-2x"></i></a>
                                     <!-- <li><a href="https://indiapl.com/karnataka/st-jeromes-pu-degree-college-613183"
@@ -620,7 +678,8 @@
                         <div class="feature-box">
                             <i class="yellow"></i>
                             <h3>Books</h3>
-                            <p style="font-size: 12px;">Reading has a plethora of benefits for mental well-being. It can help to improve memory,
+                            <p style="font-size: 12px;">Reading has a plethora of benefits for mental well-being. It can
+                                help to improve memory,
                                 concentration, and focus. It can also help reduce stress levels and enhance sleep
                                 quality. Reading has a positive impact on mental well-being and can help to improve
                                 overall health.</p>
@@ -630,7 +689,8 @@
                         <div class="feature-box">
                             <i class="light-green"></i>
                             <h3>eBooks</h3>
-                            <p style="font-size: 12px;">The aim of eBooks is to simplify and enhance the overall learning experience. Digital
+                            <p style="font-size: 12px;">The aim of eBooks is to simplify and enhance the overall
+                                learning experience. Digital
                                 Books make the learning process more interactive and engaging. Instead of listening to
                                 one person continuously talking, students can now actively participate in the learning
                                 process.</p>
@@ -643,7 +703,8 @@
                         <div class="feature-box">
                             <i class="blue"></i>
                             <h3>DVDs</h3>
-                            <p style="font-size: 12px;">The introduction of educational CDs and DVDs for students has made studies very
+                            <p style="font-size: 12px;">The introduction of educational CDs and DVDs for students has
+                                made studies very
                                 interesting. These tools provide students with real-life examples helping them to easily
                                 understand what is being conveyed to them. These CDs and DVDs help the students in their
                                 overall development by familiarizing them with technology and their uses.</p>
@@ -656,7 +717,8 @@
                         <div class="feature-box">
                             <i class="red"></i>
                             <h3>Magazines</h3>
-                            <p style="font-size: 12px;">It helps them to improve their reading and writing skills to a great extent. It even
+                            <p style="font-size: 12px;">It helps them to improve their reading and writing skills to a
+                                great extent. It even
                                 helps them in providing possible opportunities to improve their creative and imaginary
                                 writings. Students are given a chance to write and express their own ideas in a good
                                 form and in different languages through these magazines.</p>
@@ -669,7 +731,8 @@
                         <div class="feature-box">
                             <i class="violet"></i>
                             <h3>Video</h3>
-                            <p style="font-size: 12px;">Unlike reading texts and listening activities, video provides strong visual cues. These
+                            <p style="font-size: 12px;">Unlike reading texts and listening activities, video provides
+                                strong visual cues. These
                                 help learners understand what's happening – even when the language is hard to follow. In
                                 some cases, you can even play videos without sound at first and have students guess
                                 what's happening.</p>
@@ -682,7 +745,8 @@
                         <div class="feature-box">
                             <i class="green"></i>
                             <h3>Audio</h3>
-                            <p style="font-size: 12px;">Using different types of audio visual aids makes learning fun and deepens comprehension.
+                            <p style="font-size: 12px;">Using different types of audio visual aids makes learning fun
+                                and deepens comprehension.
                                 Students pay closer attention when their senses of sight and sound are simultaneously
                                 engaged. Instead of sitting passively while the teacher draws on the chalkboard,
                                 students today enjoy multimedia instruction.</p>
@@ -837,7 +901,7 @@
         </section>
         <section class="social-network section-padding">
             <div class="container">
-                <div class="center-content">
+                <div class="center-content center-content1">
                     <h2 class="section-title">Follow Us</h2>
                     <span class="underline center"></span>
                     <p class="lead">If you try to hold the power as a leader you are squeezing the energy out of the
@@ -964,14 +1028,16 @@
                                 <div id="twitter-feed">
                                     <ul>
                                         <li>
-                                            <p><a href="https://twitter.com/i/flow/login" target="_blank">@TemplateLibrary</a>
+                                            <p><a href="https://twitter.com/i/flow/login"
+                                                    target="_blank">@TemplateLibrary</a>
                                                 Sed ut perspiciatis unde omnis iste
                                                 natus
                                                 error sit voluptatem. <a href="https://twitter.com/i/flow/login"
                                                     target="_blank">template-library.com</a></p>
                                         </li>
                                         <li>
-                                            <p><a href="https://twitter.com/i/flow/login" target="_blank">@TemplateLibrary</a>
+                                            <p><a href="https://twitter.com/i/flow/login"
+                                                    target="_blank">@TemplateLibrary</a>
                                                 Sed ut perspiciatis unde omnis iste
                                                 natus
                                                 error sit voluptatem. <a href="https://twitter.com/i/flow/login"
@@ -1010,6 +1076,8 @@
         <script type="text/javascript" src="Library/js/carousel.swipe.min.js"></script>
         <script type="text/javascript" src="Library/js/bxslider.min.js"></script>
         <script type="text/javascript" src="Library/js/main.js"></script>
+        <script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
 </html>

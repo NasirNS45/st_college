@@ -21,16 +21,171 @@
 			object-fit: cover;
 			object-position: center top;
 		}
-		.jerome{
+
+		.jerome {
 			position: absolute;
 			top: 0;
 			left: 0;
 			z-index: 1111111;
 			font-size: 20px;
 			width: 100%;
-			text-align: center;	
+			text-align: center;
 			background-color: #0005;
 		}
+
+		/* Backround picture size */
+		@media screen and (max-width: 767px) {
+			.owl-carousel .owl-stage-outer {
+				height: 400px;
+			}
+		}
+
+		/* Email and mobile width */
+		@media screen and (max-width: 767px) {
+			.top-header .top-header-left {
+				width: 100%;
+				grid-row-gap: 0em;
+				font-size: 16px;
+			}
+		}
+
+		/* social media header */
+		@media screen and (max-width: 767px) {
+
+			.top-header-right ul,
+			li {
+				margin: -10px;
+				padding: 0;
+				margin-left: -9em;
+				margin-right: -7em;
+				font-size: initial;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.top-header-right .social-list li {
+				margin-left: -1.375em;
+			}
+		}
+
+		/*End social media header */
+
+		/* login and register */
+		@media screen and (max-width: 767px) {
+			.top-header-right .login-block {
+				margin-right: -5em;
+				margin-left: auto;
+				font-size: 16px;
+			}
+		}
+
+		/* End login and register */
+
+		/* Top header manu list */
+		@media screen and (max-width: 767px) {
+			.menu-list {
+				display: flex;
+				margin-left: 12em;
+				margin-right: 6em;
+			}
+		}
+
+		/* History of the founder */
+		@media screen and (max-width: 767px) {
+			.container {
+				max-width: 355px;
+				font-size: 10px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.about-upper-section .who-we-are {
+				width: 100.265%;
+			}
+		}
+
+		/* End of History of the founder */
+
+		/* Our Story */
+		@media screen and (max-width: 767px) {
+			.about-upper-section .our-story {
+				margin-left: 14em;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.top-heading1 {
+				margin-left: -2em;
+				text-transform: uppercase;
+			}
+		}
+
+		/* End Our Story */
+
+		/* Salient Features */
+		@media screen and (max-width: 767px) {
+			.Salient {
+				margin-left: -4em;
+				text-transform: uppercase;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.about-upper-section .our-story ul li {
+				margin-right: 1em;
+			}
+		}
+
+		/* End Salient Features */
+
+		@media screen and (max-width: 767px) {
+			.principal {
+				font-size: 29px;
+			}
+		}
+
+		/* College Anthem */
+		.col-md-6 {
+			width: 50%;
+			padding: 0 12px 0 12px;
+		}
+
+		@media screen and (max-width: 767px) {
+			.col-md-6 {
+				width: 100%;
+				padding: 0;
+				margin-bottom: 12px;
+			}
+		}
+
+		/* End College Anthem */
+
+		/* footer social media */
+		@media screen and (max-width: 767px) {
+			.page-footer .footer-second-section .social-list li {
+				margin: 9px;
+				padding: 0px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.page-footer .footer-second-section .social-list li:first-child {
+				margin-left: 4px;
+				margin-bottom: 30px;
+			}
+		}
+		/* End footer social media */
+
+        /* Copyright @2023 St.Jeromes College */
+		@media screen and (max-width: 767px) {
+			.footer-last-section .container {
+				margin-right: 5em;
+				margin-left: 3em;
+			}
+		}
+		/* End Copyright @2023 St.Jeromes College */
+
+		
 	</style>
 </head>
 
@@ -60,11 +215,6 @@
 										target="_blank"><i class="fab fa-youtube fa-2x"></i></a></li>
 								<li><a href="https://www.instagram.com/stjeromescollege/?igshid=ZmZhODViOGI%3D"
 										target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-								<!-- <li><a href=""><i class="fab fa-facebook-messenger"></i></a></li> -->
-								<!-- <li><a href="https://twitter.com/home" target="_blank"><i
-											class="fab fa-twitter"></i></a></li>
-								<li><a href="https://www.skype.com/en/" target="_blank"><i class="fab fa-skype"></i></a>
-								</li> -->
 							</ul>
 						</div>
 						<div class="login-block">
@@ -95,7 +245,7 @@
 							<i class="fas fa-bars"></i>
 						</div>
 						<div id="close">
-							<i class="fas fa-times"></i>
+							<i class="fas fa-times" onclick="document.getElementById('').style.display='none'"></i>
 						</div>
 					</div>
 				</div>
@@ -150,7 +300,7 @@
 
 				</article>
 				<div class="our-story">
-					<h2 class="top-heading">our story</h2>
+					<h2 class="top-heading top-heading1">our story</h2>
 					<ul>
 						<li><i class="fas fa-chalkboard-teacher"></i> <a href="#" style="font-size: 23px;">25+ certified
 								teachers</a></li>
@@ -161,14 +311,15 @@
 						</li>
 
 					</ul>
-					<h2 class="top-heading " style="padding-top: 65px;">Salient Features</h2>
+					<h2 class="top-heading Salient " style="padding-top: 65px;">Salient Features</h2>
 					<ul style="font-size: 16px;">
-							<li style="margin-bottom: 16px;">Discipline is the hallmark of the College</li>
-							<li style="margin-bottom: 16px;">Instilling of human values and social commitment</li>
-							<li style="margin-bottom: 16px;">Competency development to pursue Higher Education and face the global job market</li>
-							<li style="margin-bottom: 16px;">Life skills teaching that enhance the living standards</li>
-							<li style="margin-bottom: 16px;">Mentoring, personal counseling and regular follow up</li>
-							<li style="margin-bottom: 16px;">Eco-Friendly ambience with safety measures</li>
+						<li style="margin-bottom: 16px;">Discipline is the hallmark of the College</li>
+						<li style="margin-bottom: 16px;">Instilling of human values and social commitment</li>
+						<li style="margin-bottom: 16px;">Competency development to pursue Higher Education and face the
+							global job market</li>
+						<li style="margin-bottom: 16px;">Life skills teaching that enhance the living standards</li>
+						<li style="margin-bottom: 16px;">Mentoring, personal counseling and regular follow up</li>
+						<li style="margin-bottom: 16px;">Eco-Friendly ambience with safety measures</li>
 					</ul>
 				</div>
 			</div>
@@ -176,7 +327,7 @@
 
 		<section class="team-members" itemprop="contributor">
 			<div class="container">
-				<h2 class="top-heading">meet our principal & teachers </h2>
+				<h2 class="top-heading principal">meet our principal & teachers </h2>
 				<article class="developer-grid">
 					<div class="developer-wrap">
 						<img src="https://storage.googleapis.com/cstack-website-storage/IMG_0084_669d0721dd/IMG_0084_669d0721dd.jpg?updated_at=2023-02-24T06:22:49.695Z"
@@ -370,11 +521,11 @@
 				<h2 class="top-heading" style="text-align: center;">College Anthem</h2>
 				<section style="margin-top: -14px;">
 					<div class="container">
-						<div class="row" style="display: flex;">
-							<div class="col-md-6" style="width: 50%;padding: 8px;"><video controls width="100%"
+						<div class="row" style="display: flex;flex-wrap: wrap;">
+							<div class="col-md-6"><video controls width="100%"
 									src="https://storage.googleapis.com/cstack-website-storage/kannada_anthem_ec0ef3188d/kannada_anthem_ec0ef3188d.mp4?updated_at=2023-02-24T09:46:07.070Z"></video>
 							</div>
-							<div class="col-md-6" style="width: 50%;padding: 8px;"><video controls width="98%"
+							<div class="col-md-6"><video controls width="98%"
 									src="https://storage.googleapis.com/cstack-website-storage/ENGLISH_b25d2cf580/ENGLISH_b25d2cf580.mp4?updated_at=2023-02-24T09:45:12.704Z"></video>
 							</div>
 						</div>
@@ -434,12 +585,6 @@
 							<a href="https://www.instagram.com/stjeromescollege/?igshid=ZmZhODViOGI%3D" target="_blank"
 								style="font-size: 16px;"><i class="fab fa-instagram"></i>
 								instagram</a></li>
-							<!-- <li><a href="https://www.facebook.com/stjeromescollege/" target="_blank">facebook</a></li>
-							<li><a href="https://www.youtube.com/channel/UCaKIkFMvROWbe__J9ryPETA?app=desktop"
-									target="_blank">youtube</a>
-							</li>
-							<li><a href="https://twitter.com/home" target="_blank">twitter</a>
-							</li> -->
 						</ul>
 					</div>
 					<div class="box-wrap">
@@ -463,16 +608,9 @@
 						<li><a href="https://indiapl.com/karnataka/st-jeromes-pu-degree-college-613183"
 								target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
 
-						<!-- <li><a href="https://indiapl.com/karnataka/st-jeromes-pu-degree-college-613183"
-									target="_blank"><i class="fab fa-google-plus-g"></i></a> -->
-
 						<li><a href="https://www.facebook.com/stjeromescollege/" target="_blank"><i
 									class="fab fa-facebook-square"></i></a>
 						</li>
-						<!-- <li><a href="https://twitter.com/home" target="_blank"><i
-											class="fab fa-twitter"></i></a></li> -->
-						<!-- <li><a href="https://www.skype.com/en/" target="_blank"><i class="fab fa-skype"></i></a>
-								</li> -->
 						<li><a href="https://www.youtube.com/channel/UCaKIkFMvROWbe__J9ryPETA?app=desktop"
 								target="_blank"><i class="fab fa-youtube"></i></a></li>
 						<li><a href="https://www.instagram.com/stjeromescollege/?igshid=ZmZhODViOGI%3D"

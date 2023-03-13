@@ -12,6 +12,156 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" />
 	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		/* Backround picture size */
+		@media screen and (max-width: 767px) {
+			.owl-carousel .owl-stage-outer {
+				height: 450px;
+			}
+		}
+
+		/* Email and mobile width */
+		@media screen and (max-width: 767px) {
+			.top-header .top-header-left {
+				width: 100%;
+				grid-row-gap: 0em;
+				font-size: 16px;
+			}
+		}
+		/* social media header */
+		@media screen and (max-width: 767px) {
+
+			.top-header-right ul,
+			li {
+				margin: -10px;
+				padding: 0;
+				margin-left: -9em;
+				margin-right: -7em;
+				font-size: initial;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.top-header-right .social-list li {
+				margin-left: -1.375em;
+			}
+		}
+		/*End social media header */
+
+		/* login and register */
+		@media screen and (max-width: 767px) {
+			.top-header-right .login-block {
+				margin-right: -4em;
+				margin-left: auto;
+				font-size: 16px;
+			}
+		}
+		/* End login and register */
+
+		/* Top header manu list */
+		@media screen and (max-width: 767px) {
+			.menu-list {
+				display: flex;
+				margin-left: 12em;
+				margin-right: 6em;
+			}
+		}
+		/* End Top header manu list */
+
+		/* Cross Mark */
+		@media screen and (max-width: 767px) {
+			#close {
+				margin-right: -1em;
+			}
+		}
+		/* End Cross Mark */
+
+		/* Leave us your info */
+		@media screen and (max-width: 767px) {
+			.container {
+				max-width: 355px;
+			}
+
+			.contact-page-section .people-info-wrap h2 {
+				margin-right: -6em;
+				margin-left: -2em;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.contact-page-section .people-info-wrap {
+				margin-right: 10em;
+				margin-left: auto;
+			}
+
+			.contact-page-section .people-info-wrap p {
+				margin-top: 1.5625em;
+				margin-bottom: 2.5em;
+				margin-left: -4em;
+				margin-right: -6em;
+			}
+
+			.contact-page-section .people-info-wrap form span {
+				margin-right: -27em;
+				margin-left: -5em;
+			}
+		}
+		/* End Leave us your info */
+
+		/* Contact Info */
+		@media screen and (max-width: 767px) {
+			.contact-page-section .contact-list {
+				padding-bottom: -0.125em;
+				margin-right: 4em;
+				margin-left: 9em;
+			}
+		}
+		/*End Contact Info */
+
+		/* Social media */
+		@media screen and (max-width: 767px) {
+			.contact-page-section .contact-social li {
+				margin-right: -6.5em;
+				margin-left: 8em;
+				margin: 1em;
+			}
+
+			.contact-page-section .contact-social {
+				margin-top: -5.75em;
+				margin-left: -3em;
+			}
+		}
+		/* End Social media */
+
+		/* footer social media */
+		@media screen and (max-width: 767px) {
+			.page-footer .footer-second-section .social-list li {
+				margin: 9px;
+				padding: 0px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.page-footer .footer-second-section .social-list li:first-child {
+				margin-left: 4px;
+				margin-bottom: 30px;
+			}
+		}
+		/* End footer social media */
+
+		/* Copyright @2023 St.Jeromes College */
+		@media screen and (max-width: 767px) {
+			.footer-last-section .container {
+				margin-right: 4em;
+				margin-left: 4em;
+			}
+			.container{
+			    box-sizing:border-box;
+			    overflow-x:hidden;
+		}
+	}
+		/* End Copyright @2023 St.Jeromes College */
+	</style>
 </head>
 
 <body>
@@ -41,10 +191,6 @@
 										target="_blank"><i class="fab fa-youtube fa-2x"></i></a></li>
 								<li><a href="https://www.instagram.com/stjeromescollege/?igshid=ZmZhODViOGI%3D"
 										target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-								<!-- <li><a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"
-											target="_blank"></i></a></li>
-								<li><a href="https://www.skype.com/en/" target="_blank"><i class="fab fa-skype"></i></a>
-								</li> -->
 							</ul>
 						</div>
 						<div class="login-block">
@@ -94,7 +240,7 @@
 		</div>
 		<section class="contact-page-section">
 			<div class="container" style="margin: 50px 0;padding-left: 60px;">
-				<div class="people-info-wrap">
+				<div class="people-info-wrap" style="display: flex;flex-wrap: wrap;">
 					<h2>leave us your info</h2>
 					<p>Email us with any questions or inquiries. We would be happy to answer your questions and set up a
 						meeting with you.
@@ -104,11 +250,13 @@
 							<input type="text" placeholder="Full Name*" class="input- name">
 							<input type="email" placeholder="Email*" class="input- email">
 						</span>
-						<input type="text" placeholder="Subject*" class="input- subject">
-						<textarea placeholder="Messages*" class="input-">
+						<span>
+							<input type="text" placeholder="Subject*" class="input- subject">
+							<textarea placeholder="Messages*" class="input-">
 
 						</textarea>
-						<input type="submit" value="submit now">
+							<input type="submit" value="submit now">
+						</span>
 					</form>
 				</div>
 

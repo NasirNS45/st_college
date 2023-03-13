@@ -9608,8 +9608,8 @@ a:focus {
 }
 .category-filter .category-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: -13px;
+  padding: -1px;
 }
 .category-filter .category-list .category-item {
   display: none;

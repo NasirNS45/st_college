@@ -391,7 +391,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	margin: 0;
 	
-	
 }
 
 dfn, cite, em, i {
@@ -463,9 +462,11 @@ hr {
 	height: 1px;
 	margin-bottom: 1.5em;
 }
-
+@media screen and (max-width: 767px) {
 ul, ol {
-	margin: 0 0;
+	margin: 0 -32px;
+	padding: 14px;
+}
 }
 
 ul {
@@ -1114,6 +1115,7 @@ ul > li {
     background: #0c83e7;
   }
 }
+
 
 
 
@@ -2938,6 +2940,7 @@ RESPONSIVE STYLESHEET
 	}
 
 	#close {
+		padding: 0  4px;
 		display: none;
 		font-size: 40px;
 		cursor: pointer;
@@ -3397,7 +3400,7 @@ RESPONSIVE STYLESHEET
 	}
 
 	.page-footer .footer-second-section .social-list li:nth-child(4){
-		margin-left: 26%;
+		margin-left: 5%;
 	}
 
 	/*=========================

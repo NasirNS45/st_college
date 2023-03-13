@@ -29,16 +29,132 @@
 			border-radius: 8px;
 
 		}
-		.jerome{
+
+		.jerome {
 			position: absolute;
 			top: 0;
 			left: 0;
 			z-index: 1111111;
 			font-size: 20px;
 			width: 100%;
-			text-align: center;	
+			text-align: center;
 			background-color: #0005;
 		}
+
+		/* Backround picture size */
+		@media screen and (max-width: 767px) {
+			.owl-carousel .owl-stage-outer {
+				height: 400px;
+			}
+		}
+
+		/* Email and mobile width */
+		@media screen and (max-width: 767px) {
+			.top-header .top-header-left {
+				width: 100%;
+				grid-row-gap: 0em;
+				font-size: 16px;
+				margin-left: -2em;
+			}
+		}
+
+		/* social media header */
+		@media screen and (max-width: 767px) {
+
+			.top-header-right ul,
+			li {
+				margin: -10px;
+				padding: 0;
+				margin-left: -9em;
+				margin-right: -7em;
+				font-size: initial;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.top-header-right .social-list li {
+				margin-left: -1.375em;
+			}
+		}
+
+		/*End social media header */
+
+		/* login and register */
+		@media screen and (max-width: 767px) {
+			.top-header-right .login-block {
+				margin-right: -5em;
+				margin-left: auto;
+				font-size: 16px;
+			}
+		}
+
+		/* End login and register */
+
+		/* Top header manu list */
+		@media screen and (max-width: 767px) {
+			.menu-list {
+				display: flex;
+				margin-left: 12em;
+				margin-right: 6em;
+			}
+		}
+
+		/* End Top header manu list */
+
+		/* Cross Mark */
+		@media screen and (max-width: 767px) {
+			#close {
+				margin-right: -1em;
+			}
+
+			.gallery-img-wrap {
+				width: 100% !important;
+				max-height: 220px;
+			}
+		}
+
+		/* *{
+			overflow-x: hidden;
+		} */
+
+		/* End Cross Mark */
+
+		/* footer social media */
+		@media screen and (max-width: 767px) {
+			.page-footer .footer-second-section .social-list li {
+				margin: 9px;
+				padding: 0px;
+			}
+
+			.gallery-img-wrap {
+				width: 100% !important;
+				max-height: 220px;
+				position: unset !important;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.page-footer .footer-second-section .social-list li:first-child {
+				margin-left: 4px;
+				margin-bottom: 30px;
+			}
+
+			.page-footer .footer-first-section .container {
+				/* display: grid;
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 40px; */
+				margin-left: 1em;
+			}
+			.footer-second-section .container {
+				margin-left: 1em;
+			}
+			.footer-first-section .box-wrap h4 { 
+				margin-left: 0em;
+				margin-right: -2em;
+			}
+		}
+
+		/* End footer social media */
 	</style>
 </head>
 
