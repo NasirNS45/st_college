@@ -655,7 +655,8 @@ a:hover, a:active {
 .top-header-left {
 	display: flex;
 	flex-flow: row wrap;
-	width: 50%;
+	width: 51%;
+	margin-right: -2em;
 }
 
 .top-header-block {
