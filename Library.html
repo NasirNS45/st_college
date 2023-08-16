@@ -43,6 +43,40 @@
             font-size: 7rem !important;
         }
 
+        .top-header-block {
+            margin-right: 3.5rem;
+        }
+
+        marquee {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            font-size: 36px;
+            background: black;
+        }
+
+        .social-block {
+            margin: -4px;
+            margin-right: -14em;
+        }
+
+        .top-header-left {
+            display: flex;
+            flex-flow: row wrap;
+            width: 51%;
+            margin-right: -2em;
+            margin-left: -8em;
+        }
+
+        img {
+            height: auto;
+            max-width: 100%;
+            margin-left: 0em;
+        }
+
         /* Email and mobile width */
         @media screen and (max-width: 767px) {
             .top-header .top-header-left {
@@ -50,6 +84,8 @@
                 grid-row-gap: 0em;
                 font-size: 16px;
                 margin-left: -2em;
+                margin-top: -1em;
+                margin-right: 71em;
             }
         }
 
@@ -86,18 +122,21 @@
             .center-content1 {
                 margin-top: 74em;
             }
+
             .social-network ul {
                 width: 303px;
                 margin-top: 1029px;
             }
         }
+
         /* Cross Mark */
-		@media screen and (max-width: 767px) {
-			#close {
-				margin-right: -1em;
-			}
-		}
-		/* End Cross Mark */
+        @media screen and (max-width: 767px) {
+            #close {
+                margin-right: -1em;
+            }
+        }
+
+        /* End Cross Mark */
 
         /*End Follow Us */
     </style>
@@ -109,11 +148,11 @@
             <div class="top-header">
                 <div class="container">
                     <div class="top-header-left">
-                        <div class="top-header-block">
+                        <div class="top-header-block" style="font-size: 18px;">
                             <a itemprop="email"><i class="fa-solid fa-envelope"></i>
                                 saintjeromescollege@gmail.com</a>
                         </div>
-                        <div class="top-header-block">
+                        <div class="top-header-block" style="font-size: 18px;">
                             <a itemprop="telephone"><i class="fas fa-phone"></i> +91
                                 9008774321</a>
                         </div>
@@ -138,10 +177,10 @@
                                 </li> -->
                             </ul>
                         </div>
-                        <div class="login-block">
+                        <!-- <div class="login-block">
                             <a href="login.html">Login /</a>
                             <a href="signup.html">Register</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -161,6 +200,7 @@
                                 <li><a href="gallery2.html">Gallery</a></li>
                                 <li><a href="Library.html">Library</a></li>
                                 <li><a href="contact.html">Contact</a></li>
+                                <li><a href="">Academy</a></li>
                             </ul>
                         </nav>
                         <div id="bar">
@@ -998,8 +1038,8 @@
                                         <li><a href="about.html">History</a></li>
                                         <li><a href="about.html">Meet Our Staff</a></li>
                                         <li><a href="#">Board of Trustees</a></li>
-                                        <li><a href="#">Budget</a></li>
-                                        <li><a href="#">Annual Report</a></li>
+                                        <!-- <li><a href="#">Budget</a></li> -->
+                                        <!-- <li><a href="#">Annual Report</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -1028,19 +1068,17 @@
                                 <div id="twitter-feed">
                                     <ul>
                                         <li>
-                                            <p><a href="https://twitter.com/i/flow/login"
-                                                    target="_blank">@TemplateLibrary</a>
+                                            <p><a href="index.html" target="_blank">@TemplateLibrary</a>
                                                 Sed ut perspiciatis unde omnis iste
                                                 natus
-                                                error sit voluptatem. <a href="https://twitter.com/i/flow/login"
+                                                error sit voluptatem. <a href="index.html"
                                                     target="_blank">template-library.com</a></p>
                                         </li>
                                         <li>
-                                            <p><a href="https://twitter.com/i/flow/login"
-                                                    target="_blank">@TemplateLibrary</a>
+                                            <p><a href="index.html" target="_blank">@TemplateLibrary</a>
                                                 Sed ut perspiciatis unde omnis iste
                                                 natus
-                                                error sit voluptatem. <a href="https://twitter.com/i/flow/login"
+                                                error sit voluptatem. <a href="index.html"
                                                     target="_blank">template-library.com</a></p>
                                         </li>
                                     </ul>
@@ -1052,7 +1090,7 @@
             </div>
             <div class="container-fluid" style="position: relative;">
                 <marquee behavior="smoth" direction="" style="width: 100%;">
-                    <h1 style="color: rgb(212, 200, 201); width: 100%;">Copyright © 2023 St Jerome's PU
+                    <h1 style="color: rgb(212, 200, 201); width: 100%; font-size: 15px;">Copyright © 2023 St Jerome's PU
                         College,
                         Bengaluru Maintained by Technodreams
                         Advanced Systems Private Limited.</h1>

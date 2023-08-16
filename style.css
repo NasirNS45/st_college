@@ -500,6 +500,7 @@ img {
 
 figure {
 	margin: 0;
+	background-color: #616161;
 	/* Extra wide images within figure tags don't overflow the content area. */
 }
 
@@ -631,6 +632,7 @@ a:hover, a:active {
 
 .top-header {
 	/*background: #1c3961;*/
+	/* background: linear-gradient(to right, rgb(4, 4, 103), #8c0619); */
 }
 
 .top-header a {
@@ -657,10 +659,11 @@ a:hover, a:active {
 	flex-flow: row wrap;
 	width: 51%;
 	margin-right: -2em;
+	margin-left: -4em;
 }
 
 .top-header-block {
-	margin-right: 4.5rem;
+	margin-right: -1.5rem;
 }
 
 .top-header-right {
@@ -672,7 +675,8 @@ a:hover, a:active {
 
 .top-header-right ul, li {
 	margin: 0;
-	padding: 0;
+	padding: 5px;
+	margin-left: -22em;
 }
 
 .top-header-right li {
@@ -696,8 +700,8 @@ a:hover, a:active {
 	flex: 1;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	padding-top: 1.375em;
-	padding-bottom: 1.375em;
+	padding-top: 0.375em;
+	/* padding-bottom: 1.375em; */
 }
 .main-header .containers {
 	display: flex;
@@ -705,8 +709,8 @@ a:hover, a:active {
 	padding: 0 4rem;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	padding-top: 1.375em;
-	padding-bottom: 1.375em;
+	padding-top: 0.375em;
+	padding-bottom: 0.375em;
 }
 
 .nav-desktop {
@@ -1263,6 +1267,7 @@ ul > li {
 	box-sizing: border-box;
 	box-sizing: content-box;
 	overflow: hidden;
+	margin-top: 4em;
 }
 
 .gallery-section2 .gallery-images-section {
@@ -3516,7 +3521,7 @@ RESPONSIVE STYLESHEET
 
 .what-other-say .container .customer-item {
 	width: 83%;
-	background: #000;
+	background: #00695c;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 35px;
@@ -3526,6 +3531,7 @@ RESPONSIVE STYLESHEET
 .what-other-say .container .customer-item .border {
 	border: 1px solid #fff;
 	padding: 34px 65px 45px 65px;
+	background-color: #37474F;
 }
 
 .what-other-say .container .customer-item .customer-img, 
@@ -3581,11 +3587,11 @@ RESPONSIVE STYLESHEET
 marquee {    width: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 44%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    font-size: 36px;
-    background: #000;
+    font-size: 26px;
+    background: aliceblue;
 }
 marquee h1{
     color: #ffffff !important;
