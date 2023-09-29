@@ -269,6 +269,8 @@
         @media (max-width: 768px) {
             .c_col {
                 width: 100%;
+                padding-top: 20px;
+                padding-bottom: 70px;
             }
 
             .marquee {
@@ -285,12 +287,12 @@
             .c_row {
                 display: flex;
                 flex-wrap: wrap;
-                grid-row-gap: 13em;
+                grid-row-gap: 18em;
             }
 
             .c_header {
                 width: 100%;
-                padding: 9px 8px;
+                padding: 5px 8px;
                 font-size: 18px;
                 text-align: center;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -299,7 +301,7 @@
             }
 
             .c_body ul li {
-                padding: 4px 0;
+                padding: 0px 0;
                 border-bottom: 1px solid #0001;
                 margin-left: 1em;
             }
@@ -792,11 +794,12 @@
     <div class="c_container">
         <div class="c_row">
             <div class="c_col">
-                <div class="c_header">
+                <div class="c_header" style="font-size: 22px; padding: 4px 8px;">
                     News and Event
-                    <marquee behavior="smoth" direction="up">
+                    <marquee onmouseout="this.start();" onmouseover="this.stop();" onkeydown="this.setAttribute(
+                        'scroll amount', 0, 0);" scrollamount="4" id="marguee" behavior="smoth" direction="up">
                 </div>
-                <div class="c_body">
+                <div class="c_body" style="padding: 25px 6px;">
                     <ul>
                         <li><span class="c_new">New</span>Coming-Soon</li>
                         <li><span class="c_new">New</span>Coming-Soon</li>
@@ -811,13 +814,16 @@
                 </div>
             </div>
             <div class="c_col">
-                <div class="c_header">
+                <div class="c_header" style="font-size: 22px;">
                     Academy Notification
-                    <marquee behavior="smoth" direction="up">
+                    <marquee onmouseout="this.start();" onmouseover="this.stop();" onkeydown="this.setAttribute(
+                        'scroll amount', 0, 0);" scrollamount="4" id="marguee" behavior="smoth" direction="up">
                 </div>
-                <div class="c_body">
+                <div class="c_body" style="padding: 24px 6px;">
                     <ul>
-                        <li><span class="c_new">New</span>Coming-Soon</li>
+                        <li><span class="c_new" sty>New</span>Coming-Soon
+                            <!-- <a href="" style="font-size: 20px;">Coming Soon</a> -->
+                        </li>
                         <li><span class="c_new">New</span>Coming-Soon</li>
                         <li><span class="c_new">New</span>Coming-Soon</li>
                         <li><span class="c_new">New</span>Coming-Soon</li>
@@ -830,21 +836,33 @@
                 </div>
             </div>
             <div class="c_col">
-                <div class="c_header">
+                <div class="c_header" style="font-size: 22px;">
                     Examination Notification
-                    <marquee behavior="smoth" direction="up">
+                    <marquee onmouseout="this.start();" onmouseover="this.stop();" onkeydown="this.setAttribute(
+                        'scroll amount', 0, 0);" scrollamount="4" id="marguee" behavior="smoth" direction="up">
                 </div>
-                <div class="c_body">
-                    <marquee behavior="smoth" direction="up"></marquee>
+                <div class="c_body" style="padding: 38px 6px;">
                     <ul>
+                        <li><span class="c_new">New</span>
+                            <a href="assete/Exam Postpone  letter .pdf" style="color: red; font-size: 20px;">Exam
+                                Postpone</a>
+                        </li>
+                        <li><span class="c_new">New</span>
+                            <a href="assete/CBCS 2 4 6 sem time table.pdf" style="color: red; font-size: 20px;">CBCS 2 4
+                                6 Sem Time Table</a>
+                        </li>
+                        <li><span class="c_new">New</span>
+                            <a href="assete/NEP 4th semester Exam time table.pdf"
+                                style="color: red; font-size: 20px;">NEP 4th Semester Exam Time Table</a>
+                        </li>
+                        <li><span class="c_new">New</span>
+                            <a href="assete/Final  TimeTable for midterm examination 2023.pdf"
+                                style="color: red; font-size: 20px;">Final Time Table for Midterm Exammination 2023</a>
+                        </li>
+                        <!-- <li><span class="c_new">New</span>Coming-Soon</li>
                         <li><span class="c_new">New</span>Coming-Soon</li>
                         <li><span class="c_new">New</span>Coming-Soon</li>
-                        <li><span class="c_new">New</span>Coming-Soon</li>
-                        <li><span class="c_new">New</span>Coming-Soon</li>
-                        <li><span class="c_new">New</span>Coming-Soon</li>
-                        <li><span class="c_new">New</span>Coming-Soon</li>
-                        <li><span class="c_new">New</span>Coming-Soon</li>
-                        <li><span class="c_new">New</span>Coming-Soon</li>
+                        <li><span class="c_new">New</span>Coming-Soon</li> -->
                     </ul>
                     </marquee>
                 </div>
