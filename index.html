@@ -99,6 +99,34 @@
             padding: 0 16px;
         }
 
+        .nav-desktop {
+            display: inline-block;
+            padding-top: 3em;
+            /* font-size: 13px; */
+        }
+
+        @media screen and (max-width: 767px) {
+            .nav-desktop {
+                display: inline-block;
+                padding-top: 1em;
+                /* font-size: 13px; */
+                margin-left: -1em;
+            }
+
+            .logo-wrap {
+                width: 90px;
+                margin-left: 65px;
+            }
+        }
+
+        /* .nav-desktop li,
+        .nav-desktop li a {
+            font-size: 2.8rem;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            color: #3a3a3a;
+        } */
+
         /* .event-wrap {
             width: 32% !important;
             min-height: 298px;
@@ -322,11 +350,14 @@
             .top-header .top-header-left {
                 width: 100%;
                 grid-row-gap: 0em;
+                margin-left: -17px;
             }
 
             .top-header-block {
                 margin-right: -2.5rem;
-                margin-left: -5em;
+                margin-left: -67px;
+                margin-top: -15px;
+                margin-bottom: 20px;
             }
         }
 
@@ -345,7 +376,8 @@
 
         @media screen and (max-width: 767px) {
             .top-header-right .social-list li {
-                margin-right: 14px;
+                margin-right: 33px;
+                margin-left: -8px;
             }
         }
 
@@ -361,7 +393,7 @@
                 margin-right: -8em;
                 margin-left: auto;
                 font-size: 16px;
-                margin-left: 3em;
+                margin-left: 2em;
                 margin-top: -3em;
             }
         }
@@ -554,7 +586,7 @@
                                 <li><a href="https://indiapl.com/karnataka/st-jeromes-pu-degree-college-613183"
                                         target="_blank"><i class="fab fa-google-plus-g fa-2x"></i></a>
                                 </li>
-                                <li><a href="https://www.facebook.com/stjeromescollege/" target="_blank"><i
+                                <li><a href="https://www.facebook.com/stjeromescollege/" target="_blank" style="margin-left: -11px;"><i
                                             class="fab fa-facebook-square fa-2x" style="color: #6d97f3;"></i></a>
                                 </li>
                                 <li><a href="https://www.youtube.com/channel/UCaKIkFMvROWbe__J9ryPETA?app=desktop"
@@ -587,7 +619,7 @@
                 <div class="container">
                     <div class="logo-wrap" itemprop="logo">
                         <img src="https://storage.googleapis.com/cstack-website-storage/college_logo_3fdf0fd7ab/college_logo_3fdf0fd7ab.png?updated_at=2023-02-24T09:55:15.075Z"
-                            style="width: 90px;" alt="Logo Image">
+                            style="width: 190px; margin-left: -63px;" alt="Logo Image">
                         <!-- <h1>Education</h1> -->
                     </div>
                     <!-- <h1 class="addmissionbanner"><a
@@ -603,11 +635,25 @@
                     <nav class="nav-desktop">
                         <ul class="menu-list">
                             <li><a href="index.html">Home</a></li>
+                            <li class="menu-parent">Academy Informations
+                                <!-- <li><a href="academy.html">Academy Informations</a> -->
+                                <ul class="sub-menu">
+                                    <li style="margin-left: 10px;"><a href="academy.html">Available Courses</a></li>
+                                    <!-- <li><a href="#">Child</a></li> -->
+                                    <!-- <li class="menu-parent">Child
+                                            <ul class="sub-menu">
+                                                <li><a href="">Grand-child</a></li>
+                                                <li><a href="">Grand-child</a></li>
+                                            </ul>
+                                        </li> -->
+                                </ul>
+                            </li>
+                            <!-- <li><a href="academy.html">Academy Informations</a></li> -->
                             <li><a href="about.html">About</a></li>
                             <li><a href="gallery2.html">Gallery</a></li>
                             <li><a href="Library.html">Library</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><a href="">Academy</a></li>
+
                         </ul>
                     </nav>
                     <div id="bar">
@@ -696,13 +742,12 @@
             </div>
         </div>
     </div>
-    <section class="popular course">
+    <!-- <section class="popular course">
         <div class="page-heading">
             <div class="container">
                 <h2>available courses</h2>
             </div>
         </div>
-        <!-- Popular courses End -->
         <div class="learn-courses">
             <div class="container">
                 <div class="accordion-box" style="padding-bottom: 40px;">
@@ -785,7 +830,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="page-heading">
         <div class="container">
             <h2 class="headding1">upcoming events</h2>
@@ -1133,7 +1178,7 @@
                         </li>
                         <a href="https://www.instagram.com/stjeromescollege/?igshid=ZmZhODViOGI%3D" target="_blank"
                             style="font-size: 16px;"><i class="fab fa-instagram"></i> instagram</a></li>
-                       
+
 
                     </ul>
                 </div>
